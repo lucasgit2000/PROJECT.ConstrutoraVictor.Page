@@ -1,4 +1,78 @@
 .orcamento-section {
-    height: 100vh;
-    position: relative;
+  height: 70vh;
+  position: relative;
+  background-image: url("../assets/d03205b471a698a76b26a1e7ec0a8aa335a09ecc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  background-attachment: fixed;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.orcamento-content {
+  padding: 20px 20px;
+  height: inherit;
+}
+
+.orcamento-content > h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.orcamento-content > span {
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.orcamento-form {
+  text-align: center;
+  z-index: 1;
+}
+
+.orcamento-form > label > input {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  outline: none;
+  width: 50%;
+  padding: 10px 10px;
+}
+
+.orcamento-form > label > input::placeholder {
+  color: #f4f4f4;
+}
+.orcamento-form > label > input:-ms-input-placeholder {
+  color: #f4f4f4;
+}
+.orcamento-form > label > input::-ms-input-placeholder {
+  color: #f4f4f4;
+}
+
+.orcamento-form > button {
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width: 990px) {
+  .orcamento-section {
+    background-position-x: 84%;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .orcamento-section {
+    background-position-x: 84%;
+  }
+
+  .layer {
+    background-color: rgba(36, 37, 42, 0.2);
+  }
 }
