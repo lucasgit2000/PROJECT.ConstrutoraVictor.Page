@@ -1,3 +1,36 @@
-.contato-section{
-    height: 30vh;
+.contato-section {
+  height: 30vh;
+  background-color: #ffffff;
+  transition: all 1s ease;
+  overflow: hidden; /* dont affect childreen content on transform */
+}
+
+.contato-section:hover {
+  transform: scaleY(1.1);
+  transform-origin: bottom right;
+}
+
+.contato-section > h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.contato-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-content > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  flex-basis: 30%;
+  justify-content: space-between;
+}
+
+.contato-content > ul > li {
+  list-style-type: none;
 }
